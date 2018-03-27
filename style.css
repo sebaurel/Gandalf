@@ -1,0 +1,68 @@
+
+
+.contenair {
+    position: absolute; /* postulat de départ */
+    top: 50%; 
+    left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+.image:hover .portrait {
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.image:hover .reward {
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.image:hover .nom {
+    font-size: 3em;
+    top: 90%;
+    transition-delay: 0.2s;
+    transition-duration: 1s;
+}
+
+.portrait{
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+.nom {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 6em;
+    font-family: 'Roboto', sans-serif;
+    transition-delay: 0.2s;
+    transition-duration: 1s;
+}
+
+.reward {
+    display: block;
+    position: absolute;
+    height: 150px;
+    width: 350px;
+    top: 20%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    opacity: 0.8;
+    padding: 20px 50px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 3.5em;
+    text-align: center;
+    line-height: 1.4em;
+    transition-duration: 0.5s;
+}
+
+.orange {
+    color: orangered;
+}
+
